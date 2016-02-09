@@ -740,7 +740,7 @@ class PHPMailerSkeleton
      * Send messages using SMTP.
      * @return void
      */
-    abstract private function isSMTP()
+    public function isSMTP()
     {
         $this->Mailer = 'smtp';
     }
@@ -749,7 +749,7 @@ class PHPMailerSkeleton
      * Send messages using PHP's mail() function.
      * @return void
      */
-    abstract private function isMail()
+    public function isMail()
     {
         $this->Mailer = 'mail';
     }
